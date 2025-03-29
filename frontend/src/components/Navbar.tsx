@@ -1,10 +1,25 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Navbar = () => {
     return (
-        <div>
-            
-        </div>
+        <nav>
+            <div>
+                <div>
+                    <Image src="" alt="" />
+                    <p></p>
+                </div>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                <button>Let's connect</button>
+            </div>
+        </nav>
     );
 };
 
