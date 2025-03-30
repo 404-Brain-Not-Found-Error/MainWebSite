@@ -1,0 +1,18 @@
+[
+    {
+        "model": "main.skills",
+        "pk": 1,
+        "fields": {
+            "title": "Python",
+            "slug": "python"
+        }
+    },
+    {
+        "model": "main.skills",
+        "pk": 2,
+        "fields": {
+            "title": "Django",
+            "slug": "django"
+        }
+    }
+]

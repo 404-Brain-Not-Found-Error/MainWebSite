@@ -1,0 +1,26 @@
+[
+    {
+        "model": "main.role",
+        "pk": 1,
+        "fields": {
+            "title": "Backend Developer",
+            "slug": "backend"
+        }
+    },
+    {
+        "model": "main.role",
+        "pk": 2,
+        "fields": {
+            "title": "Frontend Developer",
+            "slug": "frontend"
+        }
+    },
+    {
+        "model": "main.role",
+        "pk": 3,
+        "fields": {
+            "title": "Fullstack Developer",
+            "slug": "fullstack"
+        }
+    }
+]

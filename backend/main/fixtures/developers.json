@@ -1,0 +1,30 @@
+[
+    {
+        "model": "main.developer",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "full_name": "Иван Петров",
+            "biography": "Опытный бэкенд-разработчик с 5-летним стажем работы с Django",
+            "role": 1,
+            "entry_date": "2023-01-15T09:00:00Z",
+            "is_stock": true,
+            "github": "https://github.com/dev1",
+            "telegram": "@dev1_ivan"
+        }
+    },
+    {
+        "model": "main.developer",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "full_name": "Анна Сидорова",
+            "biography": "Фронтенд-разработчик, специализируется на React и Vue",
+            "role": 2,
+            "entry_date": "2023-02-20T10:30:00Z",
+            "is_stock": true,
+            "github": "https://github.com/dev2",
+            "telegram": "@dev2_anna"
+        }
+    }
+]
