@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 const Navbar = () => {
     return (
@@ -16,7 +15,7 @@ const Navbar = () => {
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
                 </ul>
-                <button>Let's connect</button>
+                <button>Let&apos;s connect</button>
             </div>
         </nav>
     );
