@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        html{
+            max-height: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            height: 100%;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #333;
+            background: rgb(33,33,33);
+            background: linear-gradient(120deg, rgba(33,33,33,1) 0%, rgba(0,241,255,1) 50%, rgba(11,12,16,1) 100%); 
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 50px;
+        }
+
+        p{
+            font-size: 25px;
+        }
+
+        .api-section {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .api-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            gap: 15px;
+        }
+
+        .api-link {
+            width: 300px;
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .api-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .admin-link {
+            background: #e74c3c;
+        }
+
+        .copy {
+            display: flex;
+            gap: 30px;
+            border-radius: 10px;
+            flex-direction: column;
+            color: chartreuse;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            font-size: 20px;
+            & a {
+                color: white;
+                text-decoration: none;
+                transition: all .3s linear;
+                &:hover{
+                    color: rgb(255, 0, 0);
+                }
+            }
+        }
+
+        .dev {
+            color: rgb(0, 242, 255);
+            background: rgba(0, 0, 0, 0.9);
+            padding: 10px 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>{{ title }}</h1>
+        <p>{{ description }}</p>
+    </header>
+
+    <section class="api-section">
+        <h2>API Endpoints</h2>
+        <div class="api-links">
+            <a href="{{ api_links.developers }}" class="api-link">Разработчики</a>
+            <a href="{{ api_links.projects }}" class="api-link">Проекты</a>
+            <a href="{{ api_links.services }}" class="api-link">Услуги</a>
+            <a href="{{ api_links.blog }}" class="api-link">Блог</a>
+            <a href="{{ api_links.admin }}" class="api-link admin-link">Админка</a>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copy">
+            <span>
+                © 2025 404 <a href="https://github.com/404-Brain-Not-Found-Error">Brain Not FoundTeam</a>
+            </span> 
+            <span class="dev">
+                Made by developer <a href="https://t.me/noname431">@noname431</a>👈(ﾟヮﾟ👈) 
+            </span>
+        </p>
+    </footer>
+</body>
+
+</html>
