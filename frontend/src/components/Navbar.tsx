@@ -6,7 +6,6 @@ const Navbar = () => {
         <nav>
             <div>
                 <div>
-                    <Image src="" alt="" />
                     <p></p>
                 </div>
                 <ul>
