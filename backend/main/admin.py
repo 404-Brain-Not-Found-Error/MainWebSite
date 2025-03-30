@@ -64,27 +64,14 @@ class ProjectImagesInline(admin.TabularInline):
     get_photo.short_description = 'Изображение'
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'link', 'is_stock', 'developers_list')
+    list_display = ('id', 'title', 'link', 'is_stock',  'developers_list')
     list_display_links = ('id', 'title')
     list_editable = ('is_stock',)
     list_filter = ('is_stock', 'developers', 'skills')
     search_fields = ('title', 'description', 'slug')
     prepopulated_fields = {'slug': ('title',)}
     filter_horizontal = ('developers', 'skills')
-    fieldsets = (
-        ('Основное', {
-            'fields': ('title', 'slug', 'description', 'link')
-        }),
-        ('Участники и технологии', {
-            'fields': ('developers', 'skills')
-        }),
-        ('Медиа', {
-            'fields': ('images',)
-        }),
-        ('Настройки', {
-            'fields': ('is_stock', 'created_date')
-        }),
-    )
+    
     
     def developers_list(self, obj):
         return ", ".join([dev.full_name for dev in obj.developers.all()])
@@ -120,17 +107,6 @@ class ServiceAdmin(admin.ModelAdmin):
     list_editable = ('price', 'duration', 'is_active')
     list_filter = ('is_active',)
     search_fields = ('title', 'description')
-    fieldsets = (
-        ('Основное', {
-            'fields': ('title', 'description')
-        }),
-        ('Цена и сроки', {
-            'fields': ('price', 'duration')
-        }),
-        ('Настройки', {
-            'fields': ('is_active',)
-        }),
-    )
 
 admin.site.register(Developer, DeveloperAdmin)
 admin.site.register(Project, ProjectAdmin)

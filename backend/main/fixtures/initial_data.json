@@ -1,0 +1,158 @@
+[
+    {
+      "model": "auth.user",
+      "pk": 1,
+      "fields": {
+        "password": "pbkdf2_sha256$260000$HASH...",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "dev1",
+        "first_name": "Иван",
+        "last_name": "Петров",
+        "email": "ivan@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-01T12:00:00Z"
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 2,
+      "fields": {
+        "password": "pbkdf2_sha256$260000$HASH...",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "dev2",
+        "first_name": "Анна",
+        "last_name": "Сидорова",
+        "email": "anna@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-01-02T12:00:00Z"
+      }
+    },
+    {
+      "model": "main.role",
+      "pk": 1,
+      "fields": {
+        "title": "Backend Developer",
+        "slug": "backend"
+      }
+    },
+    {
+      "model": "main.role",
+      "pk": 2,
+      "fields": {
+        "title": "Frontend Developer",
+        "slug": "frontend"
+      }
+    },
+    {
+      "model": "main.role",
+      "pk": 3,
+      "fields": {
+        "title": "Fullstack Developer",
+        "slug": "fullstack"
+      }
+    },
+    {
+      "model": "main.skills",
+      "pk": 1,
+      "fields": {
+        "title": "Python",
+        "slug": "python"
+      }
+    },
+    {
+      "model": "main.skills",
+      "pk": 2,
+      "fields": {
+        "title": "Django",
+        "slug": "django"
+      }
+    },
+    {
+      "model": "main.skills",
+      "pk": 3,
+      "fields": {
+        "title": "JavaScript",
+        "slug": "javascript"
+      }
+    },
+    {
+      "model": "main.skills",
+      "pk": 4,
+      "fields": {
+        "title": "React",
+        "slug": "react"
+      }
+    },
+    {
+      "model": "main.skills",
+      "pk": 5,
+      "fields": {
+        "title": "PostgreSQL",
+        "slug": "postgresql"
+      }
+    },
+    {
+      "model": "main.developer",
+      "pk": 1,
+      "fields": {
+        "user": 1,
+        "full_name": "Иван Петров",
+        "biography": "Опытный бэкенд-разработчик с 5-летним стажем работы с Django и Python.",
+        "role": 1,
+        "entry_date": "2023-01-15T09:00:00Z",
+        "is_stock": true,
+        "github": "https://github.com/ivanpetrov",
+        "telegram": "@ivan_petrov_dev",
+        "skills": [1, 2, 5]
+      }
+    },
+    {
+      "model": "main.developer",
+      "pk": 1,
+      "fields": {
+        "user": 1,
+        "full_name": "Анна Сидорова",
+        "biography": "Фронтенд-разработчик с опытом работы с React и современным JavaScript.",
+        "role": 2,
+        "entry_date": "2023-02-20T10:30:00Z",
+        "is_stock": true,
+        "github": "https://github.com/annasidorova",
+        "telegram": "@anna_sidorova_dev",
+        "skills": [3, 4]
+      }
+    },
+    {
+      "model": "main.developer",
+      "pk": 1,
+      "fields": {
+        "user": 1,
+        "full_name": "Алексей Иванов",
+        "biography": "Fullstack разработчик с опытом в Django и React.",
+        "role": 3,
+        "entry_date": "2023-03-10T11:15:00Z",
+        "is_stock": true,
+        "github": "https://github.com/alexivanov",
+        "telegram": "@alex_ivanov_dev",
+        "skills": [1, 2, 3, 4]
+      }
+    },
+    {
+      "model": "main.developer",
+      "pk": 1,
+      "fields": {
+        "user": 1,
+        "full_name": "Екатерина Смирнова",
+        "biography": "UI/UX дизайнер с навыками фронтенд-разработки.",
+        "role": 2,
+        "entry_date": "2023-04-05T14:20:00Z",
+        "is_stock": false,
+        "github": "https://github.com/ekaterinasmirnova",
+        "telegram": "@ekaterina_design",
+        "skills": [3, 4]
+      }
+    }
+  ]

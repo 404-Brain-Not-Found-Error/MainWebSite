@@ -17,7 +17,7 @@
         "model": "main.developer",
         "pk": 2,
         "fields": {
-            "user": 2,
+            "user": 1,
             "full_name": "Анна Сидорова",
             "biography": "Фронтенд-разработчик, специализируется на React и Vue",
             "role": 2,

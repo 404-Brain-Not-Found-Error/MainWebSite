@@ -1,0 +1,80 @@
+[
+    {
+      "model": "main.project",
+      "pk": 1,
+      "fields": {
+        "title": "Корпоративный портал",
+        "link": "https://portal.example.com",
+        "description": "Внутренняя система для управления бизнес-процессами компании",
+        "is_stock": true,
+        "slug": "corporate-portal",
+        "developers": [1],
+        "skills": [1, 2, 3, 5]
+      }
+    },
+    {
+      "model": "main.project",
+      "pk": 2,
+      "fields": {
+        "title": "Мобильное приложение для трекинга здоровья",
+        "link": "https://healthapp.example.com",
+        "description": "Приложение для мониторинга физической активности и питания",
+        "is_stock": true,
+        "slug": "health-tracker",
+        "developers": [1],
+        "skills": [3, 4]
+      }
+    },
+    {
+      "model": "main.project",
+      "pk": 3,
+      "fields": {
+        "title": "Образовательная платформа",
+        "link": "https://edu.example.com",
+        "description": "Онлайн-курсы с системой проверки заданий и сертификатами",
+        "is_stock": true,
+        "slug": "education-platform",
+        "developers": [1],
+        "skills": [1, 2, 3, 4]
+      }
+    },
+    {
+      "model": "main.project",
+      "pk": 4,
+      "fields": {
+        "title": "Агрегатор новостей",
+        "link": "https://news.example.com",
+        "description": "Платформа для сбора и анализа новостей из различных источников",
+        "is_stock": false,
+        "slug": "news-aggregator",
+        "developers": [1],
+        "skills": [1, 3]
+      }
+    },
+    {
+      "model": "main.project",
+      "pk": 5,
+      "fields": {
+        "title": "Система бронирования отелей",
+        "link": "https://hotels.example.com",
+        "description": "Полнофункциональная система поиска и бронирования отелей по всему миру",
+        "is_stock": true,
+        "slug": "hotel-booking",
+        "developers": [1],
+        "skills": [1, 2, 3, 4, 5]
+      }
+    },
+    {
+      "model": "main.project",
+      "pk": 7,
+      "fields": {
+        "title": "Фитнес-трекер с AI",
+        "link": "https://fitai.example.com",
+        "description": "Умное приложение с искусственным интеллектом для персонализированных тренировок",
+        "is_stock": true,
+        "slug": "fitness-ai",
+        "developers": [3],
+        "skills": [3, 4]
+      }
+    }
+  ]
